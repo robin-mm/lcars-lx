@@ -13,7 +13,7 @@ To install this theme on tumblr
 4. Copy and paste the entire LCARS-LX code in.
 5. Click "update" then "save" & make it so!
 
-You won't lose anyting on your blog by deleting wat was there.
+You won't lose anyting on your blog by deleting anything in "custom html".
 This is just the "cosmetics" of the blog.
 You can easily install a new theme from their theme garden at any time, which will set everything back to normal automatically.
 
