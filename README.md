@@ -7,13 +7,13 @@ One is .html - the other .txt (which will open with any text editor - e.g. notep
 
 To install this theme on tumblr
 
-1. Go to the edit theme section on the tumblr account.
+1. Go to the edit theme section.
 2. Click on "custom html" 
 3. Delete everything already there. (It's perfetly safe)
 4. Copy and paste the entire LCARS-LX code in.
 5. Click "update" then "save" & make it so!
 
-You won't lose any your blog, posts or anything.
+You won't lose anyting on your blog by deleting wat was there.
 This is just the "cosmetics" of the blog.
 You can easily install a new theme from their theme garden at any time, which will set everything back to normal automatically.
 
