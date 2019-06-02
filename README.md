@@ -5,7 +5,7 @@ To install this theme on tumblr
 
 1. Go to the edit theme section.
 2. Click on "custom html" 
-3. Delete everything already there. (It's perfetly safe)
+3. Delete everything already there. (It's perfectly safe)
 4. Copy and paste the entire LCARS-LX code in.
 5. Click "update" then "save" & make it so!
 
