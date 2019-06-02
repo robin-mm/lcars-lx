@@ -1,10 +1,6 @@
 # LCARS-LX
 A free, responsive tumblr theme based on ST:VOY, TNG &amp; DS9 - LCARS, optimized for mobile devices.
 
-Both files in this current repository are the of same content. 
-
-One is .html - the other .txt (which will open with any text editor - e.g. notepad).
-
 To install this theme on tumblr
 
 1. Go to the edit theme section.
@@ -13,7 +9,7 @@ To install this theme on tumblr
 4. Copy and paste the entire LCARS-LX code in.
 5. Click "update" then "save" & make it so!
 
-You won't lose anyting on your blog by deleting anything in "custom html".
+You won't lose anyting on your blog by deleting the existing content in "custom html".
 This is just the "cosmetics" of the blog.
 You can easily install a new theme from their theme garden at any time, which will set everything back to normal automatically.
 
