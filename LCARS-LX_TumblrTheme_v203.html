@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<!--
+  _        ____      _      ____    ____            _      __  __
+ | |      / ___|    / \    |  _ \  / ___|          | |     \ \/ /
+ | |     | |       / _ \   | |_) | \___ \   _____  | |      \  / 
+ | |___  | |___   / ___ \  |  _ <   ___) | |_____| | |___   /  \ 
+ |_____|  \____| /_/   \_\ |_| \_\ |____/          |_____| /_/\_\
+        FREE TUMBLR THEME BY                                             
+        Version 203
+########   #######  ########  #### ##    ##        ##     ## ##     ## 
+##     ## ##     ## ##     ##  ##  ###   ##        ###   ### ###   ### 
+##     ## ##     ## ##     ##  ##  ####  ##        #### #### #### #### 
+########  ##     ## ########   ##  ## ## ## ###### ## ### ## ## ### ## 
+##   ##   ##     ## ##     ##  ##  ##  ####        ##     ## ##     ## 
+##    ##  ##     ## ##     ##  ##  ##   ###        ##     ## ##     ## 
+##     ##  #######  ########  #### ##    ##        ##     ## ##     ## 
+
+-->
+
+<html lang="en">
+
+<head>
+    <meta name="text:SEO Keywords" content=""/>
+	<meta name="keywords" content="{text:SEO Keywords}"/>
+	<meta name="description" content="{MetaDescription}"/>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="{Title}"/>
+	<meta name="theme-color" content="#000"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="if:Show Tagline" content="1"/>
+	<meta name="text:Tagline" content=""/>
+	<meta name="if:Show Description" content="1"/>
+	<meta name="if:Show Title" content="1"/>
+	<meta name="if:Show Avatar" content="1"/>
+	<meta name="if:Show Archive" content="1"/>
+    <meta name="if:Show RSS" content="1"/>
+    <meta name="if:Show URL" content="1"/>
+    <meta name="if:Show Tags" content="1"/>
+    
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon" href="{PortraitURL-128}">
+	
+	<title>{Title}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+<style>
+/* LCARS:LX Tumblr Theme CSS by Robin MM */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #000;
+	color: #FF9900;
+	font-family: Oswald, Impact, Tahoma, Sans serif;
+}
+a{
+	color: #FFCC99;
+}
+a:hover{
+    	color: #FFf;
+}
+
+/* START Animations */
+
+@-webkit-keyframes fade_in{
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+@keyframes fade_in{
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+@-moz-keyframes fade_in{
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+@-o-keyframes fade_in{
+	0%		{opacity: 0;}
+	100%	{opacity: 1;}
+}
+
+#big_wrapper{
+    -webkit-animation-name: fade_in;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: ease;
+	
+	-moz-animation-name: fade_in;
+	-moz-animation-duration: 3s;
+	-moz-animation-timing-function: ease;
+	
+	-o-animation-name: fade_in;
+	-o-animation-duration: 3s;
+	-o-animation-timing-function: ease;
+	
+	animation-name: fade_in;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+}
+
+/* END Animations */
+
+#big_wrapper{
+	width: 96%;
+	margin: 0 auto;
+}
+.browserupgrade{
+	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+}
+#top{
+}
+
+
+/* Topbar (Includes Blog Title, Tagline, URL, Main Menu) Styling */
+#topbar_wrapper{
+	border-left: 30px solid #ccccff;
+	border-bottom: 3px solid #ccccff;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #ccccff;
+	position: relative;
+}
+.details__topleft{
+    position: absolute;
+    top: 9.5%;
+    left: -30px;
+    padding: 0 0 0 1px;
+    color: #000;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 0.5rem;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    min-width: 29px;
+    height: 19%;
+}
+#topbar_content_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	text-align: right;
+}
+#topbar_wrapper .details__topleft{
+    top: 0;
+    border-top: 0;
+    background: #b3b3ff;
+}
+#topbar_wrapper h1{
+	font-weight: 700;
+	color: #CCDDFF;
+}
+header{
+	padding: 5px;
+}
+#tagline_url{
+	color: #666666;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+#tagline_url:hover{
+	background: #323;
+	text-decoration: underline;
+}
+nav ul,li{
+	list-style: none;
+}
+#main_nav{
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+.main_menu{
+	display: inline-block;
+	padding: 0.5%;
+	width: 48%;
+}
+.main_menu_links{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 0.9em;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding: 0.5em 1em;
+	color: black;
+	background: #9999FF;
+	border-radius: 0.72em;
+	-webkit-border-radius: 0.72em;
+	-moz-border-radius: 0.72em;
+	margin-bottom: 0.15em;
+}
+.main_menu_links:hover{
+    color: #111;
+	background: #CCDDFF;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+#main_nav ul li:nth-child(4n+3) a{
+    background: #4455bb;
+}
+#main_nav ul li:nth-child(4n+3) a:hover{
+    background: #5599ff;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+#main_nav ul li:nth-child(4) a{
+    background: #6666ff;
+}
+#main_nav ul li:nth-child(4) a:hover{
+    background: #CCDDFF;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+/* Description & HasPages Section */
+
+.description_hider{
+    display: none;
+    visibility: hidden;
+}
+
+#description_wrapper{
+    position: relative;
+	border-left: 30px solid #ccccff;
+	border-bottom: 3px solid #ccccff;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #ccccff;
+	margin: 5px 0;
+}
+#description_wrapper .details__topleft{
+    border-top: 5px solid black;
+    background: #b3b3ff;
+}
+#description_content_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+}
+#pages_nav{
+	padding: 19px 0 19px 19px;
+}
+#description{
+	display: block;
+	color: #FF9900;
+	font-weight: 400;
+	padding: 10px 10px 19px 19px;
+}
+#description ul, li{
+    list-style: disc;
+}
+#description li{
+    display: block;
+}
+.main_avatar64{
+    width: 64px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+}
+.main_avatar96{
+    visibility: hidden;
+    display: none;
+}
+.main_avatar128{
+    visibility: hidden;
+    display: none;
+}
+
+/* Posts Section styles */
+
+.tags{
+	text-align: right;
+	display: block;
+	clear: both;
+}
+.time_date{
+	color: #ccccff;
+	display: block;
+	text-align: right;
+}
+.posts_wrapper a{
+	color: #FFCC99;
+}
+.posts_wrapper a:hover{
+	color: #fff;
+}
+.full-res{
+	font-size: 0.8em;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+/* TEXT Posts styles */
+
+.text_post_wrapper{
+    position: relative;
+	border-left: 30px solid #9999FF;
+	border-bottom: 3px solid #9999FF;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #9999FF;
+	margin: 5px 0;
+	color: #FF9966;
+}
+.text_post_wrapper .details__topleft{
+    background: #8080ff;
+}
+.text_post_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #a6a6f2;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.text_post_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 19px;
+	overflow: hidden;
+}
+.text_posts header{
+    font-size: 2em;
+}
+.text_post_inner_wrapper img{
+    border-left: 0;
+    border-radius: 0;
+}
+.text_posts p{
+	padding-right: 5px;
+	margin: 5px 0;
+}
+
+/* Text Post Headings */
+
+.text_posts h1      { font-size: 1.62rem; margin: .62rem 0;}
+.text_posts h2      { font-size: 1.38rem; margin: .72rem 0;}
+.text_posts h3      { font-size: 1.19rem; margin: .81rem 0;}
+.text_posts h4      { font-size: 1rem; margin: 1.12rem 0;}
+.text_posts h5      { font-size: .83rem; margin: 1.5rem 0; }
+.text_posts h6      { font-size: .75rem; margin: 1.67rem 0; }
+
+.text_posts ul, ol{
+    display: block;
+}
+.text_posts ul li{
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.text_posts ol li{
+    display: list-item;
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+.text_posts blockquote{
+    margin: 10px;
+    border-right: 0;
+}
+.code_post_link{
+	text-align: right;
+}
+
+/* PHOTO Posts styles */
+
+.photo_wrapper{
+    position: relative;
+	border-left: 30px solid #DD6644;
+	border-bottom: 3px solid #DD6644;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #DD6644;
+	margin: 5px 0;
+}
+.photo_wrapper .details__topleft{
+    background: #BB4411;
+}
+.photo_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #BB6622;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.photo_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 20px;
+}
+.photopost{
+	width: 100%;
+	display: block;
+	border-radius: 0 10px 0 0;
+}
+.photopost_wrapper{
+    display: block;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	border-right: 20px solid #DD6644;
+	border-top: 3px solid #DD6644;
+	margin-bottom: 10px;
+	background: #DD6644;
+}
+.photo_inner_wrapper figcaption{
+	color: #ffcc66;
+	Border-left: 3px solid #DD6644;
+	border-right: 20px solid #DD6644;
+	padding-left: 5px;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+figcaption{
+	color: #ff9900;
+	Border-left: 3px solid #6666ff;
+	border-right: 20px solid #6666ff;
+	padding-left: 5px;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+/* PHOTOSET Posts styles */
+
+.photoset_wrapper{
+    position: relative;
+	border-left: 30px solid #9977AA;
+	border-bottom: 3px solid #9977AA;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #9977AA;
+	margin: 5px 0;
+}
+.photoset_wrapper .details__topleft{
+    background: #7c588d;
+}
+.photoset_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #71629d;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.photoset_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 19px;
+}
+.photoset{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.photoset_inner_wrapper figcaption{
+	color: #77ccff;
+	Border-left: 3px solid #9977AA;
+	border-right: 20px solid #9977AA;
+}
+
+/* QUOTE Posts styles */
+
+.quote_wrapper{
+    position: relative;
+	border-left: 30px solid #99CCFF;
+	border-bottom: 3px solid #99CCFF;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #99CCFF;
+	margin: 5px 0;
+}
+.quote_wrapper .details__topleft{
+    background: #66b3ff;
+}
+.quote_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #6699cc;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.quote_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 20px 0 10px 20px;
+}
+blockquote{
+	color: #CCDDFF;
+	font-size: 2em;
+	padding: 0.2em;
+	border-left: 3px solid #9977AA;
+	border-right: 20px solid #99CCFF;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+.qoute_source{
+	display:block;
+	font-size: 1.3em;
+	color: #9977AA;
+}
+
+/* LINK POST styling */
+
+.linkpost_wrapper{
+    position: relative;
+	border-left: 30px solid #FFCC66;
+	border-bottom: 3px solid #FFCC66;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #FFCC66;
+	margin: 5px 0;
+	color: #EE9955;
+}
+.linkpost_wrapper .details__topleft{
+    background: #FF9933;
+}
+.linkpost_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #EE9955;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.linkpost_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 20px 0 10px 20px;
+}
+.linkpost_wrapper h2{
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+.linkpost_inner_wrapper blockquote{
+    color: #ff9900;
+	font-size: 1.2em;
+	padding: 0.2em;
+	margin 10px;
+	border-left: 0;
+	border-right: 20px solid #FFCC66;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+
+/* CHAT POST styling */
+.chatpost_wrapper{
+	border-left: 30px solid #CC99CC;
+	border-bottom: 3px solid #CC99CC;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #CC99CC;
+	margin: 5px 0;
+}
+.chatpost_wrapper .details__topleft{
+    background: #9999CC;
+}
+.chatpost_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #9977AA;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.chatpost_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 19px;
+}
+.odd{
+	color: #99CCFF;
+}
+.even{
+	color: #5599FF;
+}
+
+/* AUDIO POST styling */
+.audiopost_wrapper{
+    position: relative;
+	border-left: 30px solid #3366CC;
+	border-bottom: 3px solid #3366CC;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #3366CC;
+	margin: 5px 0;
+}
+.audiopost_wrapper .details__topleft{
+    background: #24478f;
+    color: ##24478f;
+}
+.audiopost_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #223399;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.audiopost_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 19px;
+}
+.audiopost_inner_wrapper h1{
+	line-height: 1.3em;
+	font-size: 2em;
+}
+.audio_artist{
+    color: #99CCFF;
+}
+.audiopost_inner_wrapper h3{
+	font-size: 1.6em;
+	color: #6699CC;
+}
+.audiopost_inner_wrapper h5{
+    color: #666699;
+    line-height: 2em;
+}
+.album_artwork{
+	width: 250px;
+	border-radius: 10px;
+}
+.audio_player250{
+    display: block;
+    color: #CC99CC;
+	border-right: 20px solid #3366CC;
+	margin-bottom: 10px;
+	padding: 0;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0
+	-moz-border-radius: 0 10px 10px 0;
+    background: #3366CC;
+}
+.audiopost_inner_wrapper figcaption{
+	color: #CC99CC;
+	Border-left: 3px solid #3366CC;
+	border-right: 20px solid #3366CC;
+}
+.audiopost_inner_wrapper img{
+    max-width: 100%;
+}
+
+/* VIDEO POST styling */
+.videopost_wrapper{
+    position: relative;
+	border-left: 30px solid #ccccff;
+	border-bottom: 3px solid #ccccff;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #ccccff;
+	margin: 5px 0;
+}
+.videopost_wrapper .details__topleft{
+    background: #b3b3ff;
+}
+.videopost_wrapper .details__topleft::after{
+    content: "";
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: -35px;
+    background: #9999ff;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 5px solid #000;
+}
+.videopost_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 19px;
+}
+.video250{
+    display: block;
+    color: #ccccff;
+    background: #ccccff;
+	border-right: 20px solid #ccccff;
+	border-top: 5px solid #ccccff;
+	margin-bottom: 10px;
+	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+.video250 iframe{
+   	border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+.videopost_inner_wrapper figcaption{
+	Border-left: 3px solid #ccccff;
+	border-right: 20px solid #ccccff;
+}
+.videopost_inner_wrapper img{
+    max-width: 100%;
+}
+
+/* ANSWER POST styling */
+.answerpost_wrapper{
+    position: relative;
+	border-left: 30px solid #FFCC66;
+	border-bottom: 3px solid #FFCC66;
+	border-radius: 0 0 0 30.7px;
+	-webkit-border-radius: 0 0 0 30.7px;
+	-moz-border-radius: 0 0 0 30.7px;
+	background: #FFCC66;
+	margin: 5px 0;
+}
+.answerpost_inner_wrapper{
+	background: black;
+	border-radius: 0 0 0 19px;
+	-webkit-border-radius: 0 0 0 19px;
+	-moz-border-radius: 0 0 0 19px;
+	padding: 19px 0 10px 19px;
+}
+.asked{
+	color: #CC8888;
+	border-left: 20px solid #6688CC;
+	border-right: 5px solid #6688CC;
+	padding: 0 10px;
+	border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+}
+.answer{
+	padding-top: 10px;
+}
+.answerpost_inner_wrapper img{
+    max-width: 100%;
+}
+
+/* Reblog styles */
+
+figcaption blockquote{
+    border-right: 0;
+    border-radius: 0;
+    font-size: 1em;
+}
+.reblogged_from{
+    font-size: 0.8em;
+    text-align: right;
+    line-height: 1em;
+    color: #666;
+}
+
+.reblog_button{
+    float: right;
+    display: inline-block;
+    padding: 0 0.5em;
+    border-top: 1px solid #666;
+    border-left: 1px solid #333;
+    border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-left: 0.25em;
+}
+.reblog_button:hover{
+    border-top: 1px solid #cdf;
+    border-left: 1px solid #666;
+}
+.like_button{
+    display: inline-block;
+    padding: 0 0.5em;
+    border-top: 1px solid #666;
+    border-left: 1px solid #333;
+    border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-left: 0.25em;
+}
+.like_button:hover{
+    border-top: 1px solid #cdf;
+    border-left: 1px solid #666;
+}
+
+/* BLOG FOOTER styling */
+#blog_footer{
+	color: #ccccff;
+	border-left: 30px solid #333;
+	border-top: 3px solid #333;
+	border-radius: 30.7px 0 0 0;
+	-webkit-border-radius: 30.7px 0 0 0;
+	-moz-border-radius: 130.7px 0 0 0;
+	background: #333;
+	font-size: 0.8em;
+}
+#footer_content_wrapper hgroup{
+    color: #666;
+}
+#footer_content_wrapper{
+	background: black;
+	border-radius: 19px 0 0 0;
+	-webkit-border-radius: 19px 0 0 0;
+	-moz-border-radius: 19px 0 0 0;
+	padding: 19px 0 10px 19px;
+}
+#footer_small_nav li a{
+	color: #8888cc;
+	font-size: 1.25em;
+	display: inline-block;
+	text-transform: uppercase;
+}
+#footer_small_nav li a:hover{
+    color: #ccccdd;
+}
+#footer_small_nav ul, li, a{
+    display: inline-block;
+}
+.footer_nav{
+	margin: 0.5em;
+	border-radius: 3px;
+	transition: 0.2s;
+}
+.footer_nav:hover{
+    background: #222;
+}
+footer .main_menu_links{
+	color: black;
+	background: #666;
+	border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+}
+footer .main_menu_links:hover{
+    background: #999;
+}
+.footer_buttons_ul{
+    display:block;
+    width: 100%;
+}
+.footer_buttons_ul li{
+    display:block;
+}
+.footer_buttons_ul a{
+    color: #000;
+}
+.load_more{
+    display: block;
+    text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1em;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding: 0.75em;
+	color: black;
+	background: #666;
+	border-radius: 0.5em;
+	margin: 0.25em 0;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.load_more:hover{
+	background: #999;
+}
+.nav_arrows{
+    float: right;
+}
+#theme_details{
+    text-align: right;
+    color: #666;
+}
+#theme_details a{
+    text-transform: uppercase;
+    color: #666;
+}
+#theme_details a:hover{
+    color: #ccc;
+}
+.reblogged_from a{
+    color: #669;
+    margin-top: 3px;
+}
+.postnotes_wrapper{
+    display: block;
+}
+.postnotes_wrapper li{
+    display: block;
+}
+.postnotes_wrapper img{
+    margin-right: 0.5em;
+}
+.note_count{
+    text-align: right;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6{
+	line-height:1em;
+	text-transform: uppercase;
+}
+
+/* END - MOBILE & DEFAULT styles */
+
+/* BEGINNING - SMALL TABLET styles */
+@media screen and (min-width: 481px) {
+	#big_wrapper{
+		width: 91%;
+		margin: 0px auto;
+	}
+	#main_nav{
+		margin-left: auto;
+
+	}
+	.main_menu{
+		display: inline-block;
+		width: 45%;
+	}
+	.main_menu_links{
+		display: block;
+	}
+	.details__topleft{
+        position: absolute;
+        top: 9.5%;
+        left: -50px;
+        padding: 0 0 2em 3px;
+        display: inline-block;
+        font-size: 0.62rem;
+        border-top: 5px solid #000;
+        border-bottom: 5px solid #000;
+        min-width: 47px;
+        height: 19%;
+    }
+	#topbar_wrapper{
+		border-left: 50px solid #ccccff;
+		border-bottom: 5px solid #ccccff;
+		border-radius: 0 0 0 43px;
+		-webit-border-radius: 0 0 0 43px;
+	    -moz-border-radius: 0 0 0 43px;
+		background: #ccccff;
+	}
+	#topbar_content_wrapper{
+		background: black;
+		border-radius: 0 0 0 31px;
+		-webit-border-radius: 0 0 0 31px;
+	    -moz-border-radius: 0 0 0 31px;
+		text-align: right;
+	}
+	#pages_nav{
+		text-align: right;
+	}
+	.text_post_wrapper{
+		border-left: 50px solid #9999FF;
+		border-bottom: 5px solid #9999FF;
+		
+	}
+	.photo_wrapper{
+		border-left: 50px solid #DD6644;
+		border-bottom: 5px solid #DD6644;
+	}
+	.photoset_wrapper{
+		border-left: 50px solid #9977AA;
+		border-bottom: 5px solid #9977AA;
+		
+	}
+	.quote_wrapper{
+		border-left: 50px solid #99CCFF;
+		border-bottom: 5px solid #99CCFF;
+	}
+	.linkpost_wrapper{
+		border-left: 50px solid #FFCC66;
+		border-bottom: 5px solid #FFCC66;
+		
+	}
+	.chatpost_wrapper{
+		border-left: 50px solid #CC99CC;
+		border-bottom: 5px solid #CC99CC;
+		
+	}
+	.audiopost_wrapper{
+		border-left: 50px solid #3366CC;
+		border-bottom: 5px solid #3366CC;
+		
+	}
+	.videopost_wrapper{
+		border-left: 50px solid #ccccff;
+		border-bottom: 5px solid #ccccff;
+		
+	}
+	.answerpost_wrapper{
+		border-left: 50px solid #FFCC66;
+		border-bottom: 5px solid #FFCC66;
+	}
+	.all_post_wrappers{
+		border-radius: 0 0 0 31px;
+		-webit-border-radius: 0 0 0 31px;
+	    -moz-border-radius: 0 0 0 31px;
+	}
+	.all_posts_outer_wrappers{
+		border-radius: 0 0 0 43px;
+		-webit-border-radius: 0 0 0 43px;
+	    -moz-border-radius: 0 0 0 43px;
+	}
+	#description_wrapper{
+		border-left: 50px solid #ccccff;
+		border-bottom: 5px solid #ccccff;
+		border-radius: 43px 0 0 0 0;
+		-webit-border-radius: 43px 0 0 0 0;
+	    -moz-border-radius: 43px 0 0 0 0;
+	}
+	#description_wrapper .details__topleft{
+	    top: 19%;
+        border-top: 5px solid black;
+        background: #b3b3ff;
+    }
+	#description_content_wrapper{
+		background: black;
+	}
+	#topbar_wrapper h1{
+		font-size: 40px;
+	}
+	#blog_footer{
+		border-left: 50px solid #333;
+		border-top: 5px solid #333;
+		background: #333;
+		border-radius: 31px 0 0 0;
+		-webit-border-radius: 31px 0 0 0;
+	    -moz-border-radius: 31px 0 0 0;
+	}
+	#footer_content_wrapper{
+		background: black;
+		border-radius: 31px 0 0 0;
+		-webit-border-radius: 31px 0 0 0;
+	    -moz-border-radius: 31px 0 0 0;
+	}
+	
+	/* TABLET styles - Post Paragraphs & Captions */
+	#description{
+		border-right: 50px solid #ccccff;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 15px;
+		border-radius: 0 0 0 31px;
+		-webit-border-radius: 0 0 0 31px;
+	    -moz-border-radius: 0 0 0 31px;
+		
+	}
+	.main_avatar64{
+        visibility: hidden;
+        display: none;
+    }
+    .main_avatar96{
+        width: 96px;
+        margin: 0 auto;
+        border-radius: 12px;
+        -webit-border-radius: 12px;
+	    -moz-border-radius: 12px;
+        display: block;
+        visibility: visible;
+    }
+	.main_avatar128{
+        visibility: hidden;
+        display: none;
+    }
+	.text_posts p{
+		padding-right: 10px;
+		margin: 10px;
+	}
+	.text_posts blockquote{
+        margin: 15px;
+    }
+	.text_post_inner_wrapper img{
+	   width: 100%;
+	   max-width: 500px;
+    }
+    .tmblr-full{
+        max-width: 400px;
+    }
+	.photopost{
+		width: 100%;
+		border-radius: 0 19px 0 0;
+	}
+	.photopost_wrapper{
+        display: block;
+        border-radius: 0 31px 31px 0;
+		-webit-border-radius: 0 31px 31px 0;
+	    -moz-border-radius: 0 31px 31px 0;
+    	border-right: 50px solid #DD6644;
+    	border-top: 5px solid #DD6644;
+    	margin-bottom: 15px;
+    }
+	figcaption{
+		Border-left: 5px solid #6666ff;
+		border-right: 50px solid #6666ff;
+		padding-left: 10px;
+		border-radius: 0 31px 0 0;
+		-webit-border-radius: 0 31px 31px 0;
+	    -moz-border-radius: 0 31px 31px 0;
+	}
+	.photo_inner_wrapper figcaption{
+    	Border-left: 5px solid #DD6644;
+    	border-right: 50px solid #DD6644;
+    	border-radius: 0 31px 31px 0;
+    	-webkit-border-radius: 0 31px 31px 0;
+    	-moz-border-radius: 0 31px 31px 0;
+    }
+	.photoset{
+		max-width: 500px;
+		margin-bottom: 10px;
+	}
+	.photoset_inner_wrapper figcaption{
+		Border-left: 5px solid #9977AA;
+		border-right: 50px solid #9977AA;
+	}
+	blockquote{
+		font-size: 2em;
+		padding: 0.2em;
+		border-left: 5px solid #9977AA;
+		border-right: 50px solid #99CCFF;
+		border-radius: 0 31px 31px 0;
+		-webit-border-radius: 0 31px 31px 0;
+	    -moz-border-radius: 0 31px 31px 0;
+	}
+	.linkpost_inner_wrapper blockquote{
+        color: #ff9900;
+    	margin 15px;
+    	border-left: 0;
+    	border-right: 50px solid #FFCC66;
+    	border-radius: 0 31px 0 0;
+		-webit-border-radius: 0 31px 0 0;
+	    -moz-border-radius: 0 31px 0 0;
+    }
+	.audiopost_inner_wrapper figcaption{
+		Border-left: 5px solid #3366CC;
+		border-right: 50px solid #3366CC;
+	}
+	.audio_player250{
+	    border-right: 50px solid #3366CC;
+    	border-radius: 0 31px 31px 0;
+		-webit-border-radius: 0 31px 31px 0;
+	    -moz-border-radius: 0 31px 31px 0;
+    	margin-bottom: 15px;
+	}
+	.video250{
+    	border-right: 50px solid #ccccff;
+    	border-radius: 0 31px 31px 0;
+		-webit-border-radius: 0 31px 31px 0;
+	    -moz-border-radius: 0 31px 31px 0;
+    	margin-bottom: 15px;
+	}
+	.videopost_inner_wrapper figcaption{
+    	Border-left: 5px solid #ccccff;
+    	border-right: 50px solid #ccccff;
+    }
+	.asked{
+		border-left: 50px solid #6688CC;
+		border-right: 50px solid #6688CC;
+		padding: 0 10px;
+		border-radius: 31px;
+		-webit-border-radius: 31px;
+	    -moz-border-radius: 31px;
+	}
+} /* END - SMALL TABLET styles */
+	
+	/* BEGINNING - LARGE TABLET styles */
+	@media screen and (min-width: 641px) {
+
+		#main_nav{
+			width: 70%;
+		}
+		#pages_nav{
+			width: 70%;
+			text-align: right;
+			margin-left: auto;
+		}
+	}
+		
+    /* BEGINNING - LARGE TABLET styles */
+	@media screen and (min-width: 770px) {
+		.details__topleft{
+            position: absolute;
+            top: 10%;
+            left: -100px;
+            padding: 0 0 0 8px;
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 400;
+            border-top: 5px solid #000;
+            border-bottom: 5px solid #000;
+            min-width: 92px;
+            height: 20%;
+        }
+		#topbar_wrapper{
+			border-left: 100px solid #ccccff;
+			border-bottom: 10px solid #ccccff;
+			border-radius: 0 0 0 62px;
+			-webit-border-radius: 0 0 0 62px;
+            -moz-border-radius: 0 0 0 62px;
+		}
+		#topbar_wrapper h1{
+    		font-size: 50px;
+    	}
+		#description_content_wrapper{
+    		border-radius: 0;
+			-webit-border-radius: 0;
+            -moz-border-radius: 0;
+    	}
+    	#description_wrapper .details__topleft{
+            border-top: 5px solid black;
+            background: #b3b3ff;
+        }
+		.text_post_wrapper{
+			border-left: 100px solid #9999FF;
+			border-bottom: 10px solid #9999FF;
+			
+		}
+		.photo_wrapper{
+			border-left: 100px solid #DD6644;
+			border-bottom: 10px solid #DD6644;
+		}
+		.photoset_wrapper{
+			border-left: 100px solid #9977AA;
+			border-bottom: 10px solid #9977AA;
+		}
+		.quote_wrapper{
+			border-left: 100px solid #99CCFF;
+			border-bottom: 10px solid #99CCFF;
+		}
+		.linkpost_wrapper{
+			border-left: 100px solid #FFCC66;
+			border-bottom: 10px solid #FFCC66;
+			
+		}
+		.chatpost_wrapper{
+			border-left: 100px solid #CC99CC;
+			border-bottom: 10px solid #CC99CC;
+			
+		}
+		.audiopost_wrapper{
+			border-left: 100px solid #3366CC;
+			border-bottom: 10px solid #3366CC;
+			
+		}
+		.videopost_wrapper{
+			border-left: 100px solid #ccccff;
+			border-bottom: 10px solid #ccccff;
+		}
+		.answerpost_wrapper{
+			border-left: 100px solid #FFCC66;
+			border-bottom: 10px solid #FFCC66;
+		}
+
+		#description_wrapper{
+			border-left: 100px solid #ccccff;
+			border-bottom: 10px solid #ccccff;
+			border-radius: 0 0 0 62px;
+			-webit-border-radius: 0 0 0 62px;
+            -moz-border-radius: 0 0 0 62px;
+		}
+		#blog_footer{
+			border-left: 100px solid #333;
+			border-top: 10px solid #333;
+			border-radius: 62px 0 0 0;
+			-webit-border-radius: 62px 0 0 0;
+            -moz-border-radius: 62px 0 0 0;
+		}		
+		.all_post_wrappers{
+			border-radius: 0 0 0 38px;
+			-webit-border-radius: 0 0 0 38px;
+            -moz-border-radius: 0 0 0 38px;
+		}
+		.all_posts_outer_wrappers{
+		    border-radius: 0 0 0 62px;
+			-webit-border-radius: 0 0 0 62px;
+            -moz-border-radius: 0 0 0 62px;
+		}
+		/* LARGE TABLET styles - Post Paragraphs & Captions */
+		#description{
+			border-right: 100px solid #ccccff;
+			padding-left: 19px;
+			padding-right: 31px;
+			padding-bottom: 19px;
+		}
+		#description_content_wrapper{
+			border-radius: 0 0 0 38px;
+			-webit-border-radius: 0 0 0 38px;
+            -moz-border-radius: 0 0 0 38px;
+		}
+		.main_avatar64{
+            visibility: hidden;
+            display: none;
+            border-radius: 0;
+        }
+        .main_avatar96{
+            visibility: hidden;
+            display: none;
+            border-radius: 0;
+        }
+    	.main_avatar128{
+            width: 128px;
+            margin: 0 auto;
+            border-radius: 16px;
+            display: block;
+            visibility: visible;
+        }
+		.text_posts p{
+			padding-right: 19px;
+		}
+		.text_posts blockquote{
+            margin: 19px;
+        }
+		.text_post_inner_wrapper img{
+        }
+        .tmblr-full{
+            max-width: 500px;
+        }
+		.photopost{
+			max-width: 500px;
+			border-radius: 0 19px 0 0;
+			-webit-border-radius: 0 19px 0 0;
+            -moz-border-radius: 0 19px 0 0;
+		}
+		.photopost_wrapper{
+		    border-top: 10px solid #DD6644;
+        	border-right: 100px solid #DD6644;
+        }
+		figcaption{
+			Border-left: 10px solid #6666ff;
+			border-right: 100px solid #6666ff;
+			padding: 10px;
+		}
+		.photo_inner_wrapper figcaption{
+        	Border-left: 10px solid #DD6644;
+        	border-right: 100px solid #DD6644;
+        	border-radius: 0 31px 31px 0;
+        	-webkit-border-radius: 0 31px 31px 0;
+        	-moz-border-radius: 0 31px 31px 0;
+        }
+		.photoset_inner_wrapper figcaption{
+			Border-left: 10px solid #9977AA;
+			border-right: 100px solid #9977AA;
+		}
+	    .photoset{
+	        margin-bottom: 15px;
+	    }
+		.album_artwork{
+			max-width: 500px;
+			border-radius: 0;
+			-webit-border-radius: 0;
+            -moz-border-radius: 0;
+		}
+		.audio_player250{
+    	    border-right: 100px solid #3366CC;
+    	    padding-bottom: 5px;
+    	}
+    	.video250{
+        	border-right: 100px solid #ccccff;
+        	border-top: 10px solid #ccccff;
+        	padding-bottom: 5px;
+	    }
+	    .videopost_inner_wrapper figcaption{
+        	Border-left: 10px solid #ccccff;
+        	border-right: 100px solid #ccccff;
+        }
+		blockquote{
+			border-left: 10px solid #9977AA;
+			border-right: 100px solid #99CCFF;
+		}
+		.linkpost_inner_wrapper blockquote{
+		    border-left: 0;
+        	border-right: 100px solid #FFCC66;
+        }
+		.audiopost_inner_wrapper figcaption{
+			Border-left: 10px solid #3366CC;
+			border-right: 100px solid #3366CC;
+		}
+		.asked{
+			border-left: 100px solid #6688CC;
+			border-right: 100px solid #6688CC;
+			padding: 10px;	
+		}
+		#footer_content_wrapper{
+		    border-radius: 38px 0 0 0;
+		}
+	} /* END - LARGE TABLET styles */
+	
+	
+		/* BEGINNING - DESKTOP styles */
+		@media screen and (min-width: 961px) {
+    		#main_nav{
+    			width: 50%;
+    		}
+    		#pages_nav{
+    			width: 50%;
+    			text-align: right;
+    			margin-left: auto;
+    		}
+			#big_wrapper{
+				max-width: 960px;
+				margin: 0 auto;
+			}
+			#topbar_wrapper h1{
+				font-size: 72px;
+			}
+		} /* END - DESKTOP styles */
+		
+
+/* NO SMALLER THAN 320px  */
+@media screen and (max-width: 320px) {
+    body{
+        min-width: 320px;
+    }
+	#big_wrapper{
+		width: 100%;
+		margin: 0 auto;
+	} /* END of ALL styles */
+
+/* Custom styles */
+{CustomCSS}
+</style>
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">!! You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<div id="big_wrapper">
+<div id="top"></div>
+
+	<div id="topbar_wrapper">
+		<div id="topbar_content_wrapper">
+		
+			<header>
+				<hgroup>
+				    {block:IfShowTitle}
+					<h1>{Title}</h1>
+					{/block:IfShowTitle}
+					
+					{block:IfShowTagline}
+					<h4>{text:Tagline}</h4>
+					{block:IfShowTagline}
+					
+					{block:IfShowURL}
+					<a href="/" id="tagline_url">{BlogURL}</a>
+					{/block:IfShowURL}
+				</hgroup>
+			</header>
+			
+			<nav id="main_nav">
+				<ul>
+					<li class="main_menu"><a href="/" class="main_menu_links">Index</a></li>
+					
+					{block:IfShowArchive}
+					<li class="main_menu"><a href="/archive" class="main_menu_links">{lang:Archive}</a></li>
+					{/block:IfShowArchive}
+					
+					{block:IfShowRSS}
+					<li class="main_menu"><a href="{RSS}" class="main_menu_links">RSS</a></li>
+					{/block:IfShowRSS}
+					
+					{block:AskEnabled}
+					<li class="main_menu"><a href="/ask" class="main_menu_links">{AskLabel}</a></li>
+					{/block:AskEnabled}
+					
+					{block:HasPages}
+					{block:Pages}
+					<li class="main_menu"><a href="{URL}" class="main_menu_links">{Label}</a></li>
+				    {/block:Pages}
+				    {block:HasPages}	
+				</ul>
+			</nav><!-- END main_nav -->
+		</div><!-- END topbar_content_wrapper -->
+		
+		<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+		
+	</div><!-- END topbar_wrapper -->
+
+    {block:PermalinkPage} 
+    <div class="description_hider"> <!-- This hides contents on permalink pages -->
+    {/block:PermalinkPage} 
+    
+	<div id="description_wrapper">
+		<div id="description_content_wrapper">
+			<section>
+				
+			{block:ifShowDescription}
+    			{block:Description}
+    			<div id="description">
+    			    {block:ifShowAvatar}
+    			    <img class="main_avatar64" src="{PortraitURL-64}">
+    			    <img class="main_avatar96" src="{PortraitURL-96}">
+    			    <img class="main_avatar128" src="{PortraitURL-128}">
+    			    {/block:ifShowAvatar}
+    			    <p>{Description}</p>
+    			</div>
+    			{/block:Description}
+			{/block:ifShowDescription}
+			
+			    
+			</section>
+		</div><!-- END description_content_wrapper -->
+		
+		<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+		
+	</div><!-- END description_wrapper -->
+	
+    {block:PermalinkPage} 
+    </div><!-- END description_hider -->
+    {/block:PermalinkPage}
+ 
+	{block:Posts}
+	<article class="posts_wrapper">
+	
+		{block:Text}
+		<div class="text_post_wrapper all_posts_outer_wrappers">
+			<div class="text_post_inner_wrapper all_post_wrappers">
+				<div class="text_posts">
+				
+					{block:Title}
+					<header>
+						<h1><a href="{Permalink}">{Title}</a></h1>
+					</header>
+					{/block:Title}
+					
+					<p>{Body}</p>
+					
+					<footer>
+						{block:ifShowTags}
+						{block:HasTags}
+						<div class="tags">
+							{block:Tags} 
+							<a href="{TagURL}">#{Tag}</a>
+							{/block:Tags} 
+						</div>
+						{/block:HasTags}
+						{/block:ifShowTags}
+						
+						{block:Date}
+						<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+						{/block:Date}
+						<div class="code_post_link">
+							{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+            		    
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+						
+						{block:RebloggedFrom}
+            		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}" class="reblog_links">{ReblogParentName}</a></p>
+            		    {/block:RebloggedFrom}
+            		  
+            		    {block:PostNotes}
+            		    <div class="postnotes_wrapper">
+                		    <aside>
+                		    {PostNotes}    
+                		    </aside>
+            		    </div>
+            		    {/block:PostNotes}
+					</footer>
+					
+				</div><!-- END text_posts -->
+			</div><!-- END text_post_inner_wrapper -->
+			
+			<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+			
+        </div><!-- END text_post_wrapper -->
+		{/block:Text}
+		
+		{block:Photo}
+		<div class="photo_wrapper all_posts_outer_wrappers">
+			<div class="photo_inner_wrapper all_post_wrappers">
+
+				<figure>
+				    <div class="photopost_wrapper">
+					<picture>
+						<img class="photopost" src="{PhotoURL-500}" alt="{PhotoAlt}">
+					</picture>
+					</div>
+					
+					{block:Caption}
+					<figcaption> {Caption}</figcaption>
+					 {/block:Caption}
+					 
+				</figure>
+				<footer>
+					{block:HighRes}
+					<div class="full-res">
+						<a href="{PhotoURL-HighRes}">View Full-Res</a>
+					</div>
+					{/block:HighRes}
+					{block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					
+					<div class="code_post_link">
+					    {block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+						Log: <a href="{Permalink}">{PostID}</a>
+						
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+						
+					</div>
+					
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+        		    
+        		    {block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+				</footer>
+			</div><!-- END photo_inner_wrapper -->
+			
+			<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+			
+		</div><!-- END photo_wrapper -->
+		{/block:Photo}
+		
+		{block:Photoset}
+		<div class="photoset_wrapper all_posts_outer_wrappers">
+			<div class="photoset_inner_wrapper all_post_wrappers">
+				<figure>
+				    <div class="photoset">
+					{Photoset-500}
+					</div>
+					{block:Caption}
+					<figcaption> {Caption}</figcaption>
+					{/block:Caption}
+				</figure>
+				<footer>
+				    {block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					<div class="code_post_link">
+						{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+            		    
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+					
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+    		        
+        		    {block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+					
+				</footer>
+			</div><!-- END photoset_inner_wrapper -->
+			
+		    <span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+
+		</div><!-- END photoset_wrapper -->
+		{/block:Photoset}
+		
+		{block:Quote}
+		<div class="quote_wrapper all_posts_outer_wrappers">
+			<div class="quote_inner_wrapper all_post_wrappers">
+				<blockquote>"{Quote}"</blockquote>
+				{block:Source}
+				<p class="qoute_source">~ {Source}</p>
+				{block:Source}
+				<footer>
+				    {block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					
+					<div class="code_post_link">
+						{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+ 
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+						
+					</div>
+					
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+
+        		    {block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+				</footer>
+			</div><!-- END quote_inner_wrapper -->
+			
+		    <span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+		    
+        </div><!-- END quote_wrapper -->
+		{/block:Quote}
+		
+		{block:Link}
+		<div class="linkpost_wrapper all_posts_outer_wrappers">
+			<div class="linkpost_inner_wrapper all_post_wrappers">
+				<header>
+					<h2><a href="{URL}" {Target}>{Name}</a></h2>
+				</header>
+				{block:Excerpt}
+				    <blockquote>{Excerpt}</blockquote>
+				{/block:Excerpt}
+				{block:Description}
+    				<p>{Description}</p>
+				{/block:Description}
+				<footer>
+				    {block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					
+					<div class="code_post_link">
+						{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+					
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+        		    
+        		    {block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+					
+				</footer>
+			</div><!-- END linkpost_inner_wrapper -->
+			
+			<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+			
+        </div><!-- END linkpost_wrapper -->
+		{/block:Link}
+		
+		{block:Chat}
+		<div class="chatpost_wrapper all_posts_outer_wrappers">
+			<div class="chatpost_inner_wrapper all_post_wrappers">
+				{block:Title}
+				<header>
+					<h2><a href="{Permalink}">{Title}</a></h2>
+				</header>
+				{/block:Title}
+				{block:Lines}
+				{block:Label}
+				<p><span class="{Alt}">{Name}: {Line}</span></p>
+				{/block:Label}
+				{/block:Lines}
+				<footer>
+					{block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					
+					<div class="code_post_link">
+						{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+						Log: <a href="{Permalink}">{PostID}</a>
+						
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+					
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+					
+        		    {block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+					
+				</footer>
+			</div><!-- END chatpost_inner_wrapper -->
+			
+		    <span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+		
+		</div><!-- END chatpost_wrapper -->
+		{/block:Chat}
+			
+		{block:Audio}
+		<div class="audiopost_wrapper all_posts_outer_wrappers">
+			<div class="audiopost_inner_wrapper all_post_wrappers">
+				<header>
+					<hgroup>
+						{block:Artist}
+						<h1 class="audio_artist">{Artist}</h1>
+						{/block:Artist}
+						{block:TrackName}
+						<h3>{TrackName}</h3>
+						{/block:TrackName}
+						{block:Album}
+						<h5>{Album}</h5>
+						{/block:Album}
+					</hgroup>
+				</header>
+				<figure>
+					{block:AlbumArt}
+					<img src="{AlbumArtURL}" class="album_artwork" alt="Music Artwork"/>
+					{/block:AlbumArt}
+					
+					{block:AudioEmbed}
+					<div class="audio_player250">
+					{AudioEmbed-250}
+					</div>
+					{/block:AudioEmbed}
+					
+					{block:Caption}
+					<figcaption>
+					  {Caption}
+					  {block:ExternalAudio}
+					  {ExternalAudioURL}
+					  {/block:ExternalAudio}
+					</figcaption>
+					{block:Caption}
+				</figure>
+				<footer>
+					{block:ExternalAudio} 
+					<div class="full-res">
+						<a href="{ExternalAudioURL}">Audio Source</a>
+					</div>
+					{/block:ExternalAudio}
+					
+					{block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					<div class="code_post_link">
+						{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+            		    
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+						
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+
+					{block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+					
+				</footer>
+			</div><!-- END audiopost_inner_wrapper -->
+			
+			<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+			
+		</div><!-- END audiopost_wrapper -->
+		{/block:Audio}
+		
+		{block:Video}
+		<div class="videopost_wrapper all_posts_outer_wrappers">
+			<div class="videopost_inner_wrapper all_post_wrappers">
+				
+				<div class="video250">
+				{Video-500}
+				</div>
+				
+				{block:Caption}
+				<figure>
+					<figcaption>{Caption}</figcaption>
+				</figure>
+				{/block:Caption}
+				<footer>
+					{block:ifShowTags}
+					{block:HasTags}
+					<div class="tags">
+						{block:Tags} 
+						<a href="{TagURL}">#{Tag}</a>
+						{/block:Tags} 
+					</div>
+					{/block:HasTags}
+					{/block:ifShowTags}
+					
+					{block:Date}
+					<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+					{/block:Date}
+					<div class="code_post_link">
+						{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+            		    
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+						
+					</div>
+					
+					{block:RebloggedFrom}
+        		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+        		    {/block:RebloggedFrom}
+        		    
+					{block:PostNotes}
+        		    <div class="postnotes_wrapper">
+            		    <aside>
+            		    {PostNotes}    
+            		    </aside>
+        		    </div>
+        		    {/block:PostNotes}
+				</footer>
+			</div><!-- END videopost_inner_wrapper -->
+			
+			<span class="details__topleft">LCARS-LX</span><!-- panel stripe detailing, left side -->
+			
+		</div><!-- END videopost_wrapper -->
+		{/block:Video}
+		
+		{block:Answer}
+		<div class="answerpost_wrapper all_posts_outer_wrappers">
+			<div class="answerpost_inner_wrapper all_post_wrappers">
+				<article>
+					<p class="asked"><span class="even">{Asker}: </span>{Question}</p>
+					<p class="answer">{Answer}</p>
+					{block:Answerer}
+					<span>{Answerer}</span>
+					{/block:Answerer}
+					<footer>
+						{block:ifShowTags}
+						{block:HasTags}
+						<div class="tags">
+							{block:Tags} 
+							<a href="{TagURL}">#{Tag}</a>
+							{/block:Tags} 
+						</div>
+						{/block:HasTags}
+						{/block:ifShowTags}
+						
+						{block:Date}
+						<div class="time_date">{24HourWithZero}:{Minutes} - {DayOfMonthWithZero}/{MonthNumber} - {DayOfYear}/{Year}</div>
+						{/block:Date}
+						<div class="code_post_link">
+							{block:NoteCount}
+            		    <a href="{Permalink}"><span class="note_count">{NoteCountWithLabel}</span></a> &#x2022; 
+            		    {/block:NoteCount}
+            		    Log: <a href="{Permalink}">{PostID}</a>
+            		    
+						{LikeButton color="grey" size="16"}
+						{ReblogButton color="grey" size="16}
+						
+						</div>
+						
+						{block:RebloggedFrom}
+            		    <p class="reblogged_from">&#x21ba; Reblogged from <a href="{ReblogParentURL}">{ReblogParentName}</a></p>
+            		    {/block:RebloggedFrom}
+						
+            		    {block:PostNotes}
+            		    <div class="postnotes_wrapper">
+                		    <aside>
+                		    {PostNotes}    
+                		    </aside>
+            		    </div>
+            		    {/block:PostNotes}
+					</footer>
+				</article>
+			</div><!-- END answer_post_inner_wrapper -->
+    	</div><!-- END answer_post_wrapper -->
+		{/block:Answer}
+		
+	</article><!-- END posts_wrapper -->
+	{/block:Posts}
+	
+	<footer id="blog_footer">
+		<div id="footer_content_wrapper">
+         
+			<hgroup>
+			    {block:IfShowTitle}
+				<h1>{Title}</h1>
+				{/block:IfShowTitle}
+				{block:IfShowTagline}
+				<h4>{text:Tagline}</h4>
+				{block:IfShowTagline}
+			</hgroup>
+			<nav id="footer_small_nav">
+				<ul>
+					<li class="footer_nav"><a href="/">Index</a></li>
+					{block:IfShowArchive}
+					<li class="footer_nav"><a href="">{lang:Archive}</a></li>
+					{/block:IfShowArchive}
+					{block:IfShowRSS}
+					<li class="footer_nav"><a href="{RSS}">{lang:RSS}</a></li>
+					{/block:IfShowRSS}
+					{block:AskEnabled}
+					<li class="footer_nav"><a href="/ask">{AskLabel}</a></li>
+					{/block:AskEnabled}
+					{block:HasPages}
+						{block:Pages}
+					<li class="footer_nav"><a href="{URL}">{Label}</a></li>
+						{/block:Pages}
+					{/block:HasPages}
+				</ul>
+			</nav><!-- END footer_small_nav -->
+			<nav>
+			    <ul class="footer_buttons_ul">
+			    
+		        {block:PermalinkPage}
+		        <div class="description_hider"> <!-- This hides contents on permalink pages -->
+		        {/block:PermalinkPage}
+			        <li>
+    				<a href="#top" class="load_more">Back to top <span class="nav_arrows">&#8679;</span></a>
+    				</li>
+				{block:PermalinkPage}
+				</div> <!-- END description_hider -->
+		        {/block:PermalinkPage}
+    			    
+    			    <li>
+    			    {block:SubmissionsEnabled}
+    			    <a href="{SubmitLabel}" class="load_more">Submit post</a>
+    			    {/block:SubmissionsEnabled}
+    			    </li>
+    				
+    				{block:Pagination}
+			        {block:NextPage}
+			        <li>
+			            <a href="{NextPage}" class="load_more">
+			            {block:IndexPage}Load More Posts{/block:IndexPage}
+			            {block:PermalinkPage}Next Post{/block:PermalinkPage}
+			            <span class="nav_arrows">&#8680;</span>
+                        </a>
+		            </li>
+			        {/block:NextPage}
+			        {block:PreviousPage}
+			        <li>
+			            <a href="{PreviousPage}" class="load_more">
+			            {block:IndexPage}Previous Posts{block:IndexPage}
+			            {block:PermalinkPage}Previous Post{/block:PermalinkPage}
+			            <span class="nav_arrows">&#8678;</span>
+			            </a>
+		            </li>
+			        {/block:PreviousPage}
+			        {/block:Pagination}
+			    </ul>
+			</nav>
+			
+			<div id="theme_details">
+			    <p>LCARS-LX Tumblr Theme v203 FREE</p>
+			    <a href="https://lcars-lx.tumblr.com">lcars-lx.tumblr.com</a>
+			</div>
+			
+		</div><!-- END footer_content_wrapper -->
+	</footer>
+	
+</div><!-- END big_wrapper -->
+
+</body>
+
+<script type="text/javascript">
+
+    function youTubeSizer(y) {
+	var x = document.getElementById("youtube_iframe");
+		if (y.matches) { // If media query matches
+	    	x.style.width = "250px";
+	    	x.style.height = "187px";
+		} else {
+	    	x.style.width = "500px";
+	    	x.style.height = "374px";
+		}
+}
+
+var y = window.matchMedia("(max-width: 699px)")
+youTubeSizer(y) // Call listener function at run time
+y.addListener(youTubeSizer) // Attach listener function on state changes
+
+    function youTubeSizer2(z) {
+	var xz = document.getElementById("youtube_iframe");
+		if (z.matches) { // If media query matches
+	    	xz.style.width = "250px";
+	    	xz.style.height = "187px";
+		} else {
+	    	xz.style.width = "375px";
+	    	xz.style.height = "280.5px";
+		}
+    }
+
+var z = window.matchMedia("(max-width: 560px)")
+youTubeSizer2(z) // Call listener function at run time
+z.addListener(youTubeSizer2) // Attach listener function on state changes
+
+
+    function soundCloudSizer(s) {
+	var c = document.getElementsByClassName("soundcloud_audio_player")[0];
+		if (s.matches) { // If media query matches
+		    c.style.width = "100%";
+		    c.style.height = "250px";
+		} else {
+		    c.style.width = "100%";
+		    c.style.height = "374px";
+		}
+    }
+
+var s = window.matchMedia("(max-width: 699px)")
+soundCloudSizer(s) // Call listener function at run time
+s.addListener(soundCloudSizer) // Attach listener function on state changes
+
+    function tumblrPlayer() {
+    	var t = document.getElementsByClassName("tumblr_audio_player")[0];
+    		if (t.style.width = "250") {
+    			t.style.width = "100%";
+    			}
+    }
+tumblrPlayer()
+
+    function spotifyPlayer() {
+    	var t = document.getElementsByClassName("spotify_audio_player")[0];
+    		if (t.style.width = "250") {
+    			t.style.width = "100%";
+    			}
+    }
+spotifyPlayer()
+
+</script>
+
+</html>
