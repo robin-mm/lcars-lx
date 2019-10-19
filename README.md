@@ -14,6 +14,6 @@ You won't lose anyting on your blog by deleting the existing content in "custom 
 This is just the "cosmetics" of the blog.
 You can easily install a new theme from their theme garden at any time, which will set everything back to normal automatically.
 
-Enjoy [LCARS-LX](https://lcars-lex.tumblr.com).
+### Enjoy [LCARS-LX](https://lcars-lx.tumblr.com).
 
 Robin-MM
